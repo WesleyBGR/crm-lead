@@ -26,7 +26,7 @@ app.get('/', function(req, res) {
 });
 
  
-app.get('me/feed?access_token='+'EAAKLiWhz20EBAHLAmSisc62RNxdOTfOp1anvOReJWz9TmGoHKUXCz7QlJugMJOWZBwVZCHyOlGZCFZAYGTDq6ZAHqa1N3tQztZC4kOxTIgcsP0oVPf0QDSXJIaRI01msG31o8pZBn4LHQhJodDqfZBz9LfxCgPQroJ17iJZBBriZBBmhgZBHHLGvnMecfVKf1KWn5v3g2jsY0E4UwZDZD', function(req, res) {
+app.get('me/feed', function(req, res) {
   console.log(req);
   res.send('<pre>' + JSON.stringify(received_updates, null, 2) + '</pre>');
 });
