@@ -26,7 +26,7 @@ app.get('/', function(req, res) {
 });
 
  
-app.get('me/feed', function(req, res) {
+app.get('/me/feed', function(req, res) {
   console.log(req);
   res.send('<pre>' + JSON.stringify(received_updates, null, 2) + '</pre>');
 });
